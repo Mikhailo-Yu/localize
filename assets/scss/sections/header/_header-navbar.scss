@@ -1,0 +1,23 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.header-navbar {
+
+
+  &__list {
+    display: flex;
+    gap: 50px;
+
+    @include unlist;
+  }
+
+  &__item {
+
+  }
+
+  &__link {
+    display: block;
+    padding: 0.5em 0;
+  }
+
+}
