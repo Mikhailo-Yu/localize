@@ -2,6 +2,36 @@
 @use "../mixins" as *;
 
 .container {
-  max-width: min(100% - 40px, 1340px);
+  width: min(100% - 40px, 1340px);
   margin-inline: auto;
+}
+.btn {
+  border-width: 1px;
+  border-style: solid;
+  font-size: 16px;
+  font-weight: 600;
+
+  &--light {
+    background-color: $color-white;
+    border-color: rgba($color-black, 0.5);
+  }
+
+  &--accent {
+    background-color: $color-accent;
+    border-color: $color-accent;
+    color: $color-white;
+  }
+  &--sm {
+    width: 120px;
+    @include lg-min {
+     min-height: 45px;
+    }
+    @include lg {
+      min-height: 40px;
+    }
+  }
+  &--md {
+    width: 160px;
+    min-height: 60px;
+  }
 }

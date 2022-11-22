@@ -5,18 +5,22 @@
   position: relative;
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: $gap 50px;
   padding: 25px 0;
 
   &::after {
     content: "";
     position: absolute;
     bottom: 0;
-    height: 10px;
-    width: 100%;
-    background-color: red ;
+    left: 50%;
+    height: 1px;
+    width: 100vw;
+    margin-left: -50vw;
+    background-color: $color-grey ;
   }
-
+  @include lg {
+    flex-direction: column;
+  }
   &__logo {
 
   }

@@ -1,2 +1,53 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
+
+.header-content {
+  display: grid;
+  flex-grow: 1;
+  align-content: center;
+  padding: ($gap-xl * 2) 0;
+  row-gap: $gap;
+
+  @include  xl-min {
+    grid-template-areas: "ttl pct" "dsc pct" "act pct" "nts pct";
+    grid-template-columns: 560px 1fr;
+  }
+  @include  xl-lg {
+    grid-template-areas: "ttl pct" "dsc pct" "act pct" "nts pct";
+    grid-template-columns: 1fr 1fr;
+  }
+  @include  lg {
+    grid-template-areas: "ttl pct" "dsc pct" "act pct" "nts pct";
+    grid-template-columns: 1fr 1fr;
+  }
+  &__title {
+    grid-area: ttl;
+    font-size: 65px;
+    line-height: 1.08;
+    margin: 0 0 30px;
+
+  }
+  &__discription {
+    grid-area: dsc;
+    font-size: 25px;
+    line-height: 1.4;
+    padding-right: 70px;
+    margin-bottom: 20px;
+  }
+  &__actions {
+    grid-area: act;
+    display: flex;
+    gap: $gap-sm;
+  }
+  &__notes {
+    grid-area: nts;
+    line-height: 1.67;
+  }
+  &__picture {
+    grid-area: pct;
+  }
+  &__image {
+    width: 100%;
+    transform: translateX(-20px);
+  }
+}

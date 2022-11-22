@@ -6,8 +6,15 @@
 
   &__list {
     display: flex;
-    gap: 50px;
-
+    flex-wrap: wrap;
+   
+    @include xl-min {
+      gap: $gap 50px;
+    }
+    @include xl {
+      gap: 0 $gap;
+      justify-content: center;
+    }
     @include unlist;
   }
 
