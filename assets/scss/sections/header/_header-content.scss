@@ -19,25 +19,35 @@
   @include  lg {
     grid-template-areas: "ttl pct" "dsc pct" "act pct" "nts pct";
     grid-template-columns: 1fr 1fr;
+    text-align: center;
   }
   &__title {
     grid-area: ttl;
-    font-size: 65px;
-    line-height: 1.08;
-    margin: 0 0 30px;
+    margin: 0 0 25px;
 
   }
   &__discription {
     grid-area: dsc;
-    font-size: 25px;
     line-height: 1.4;
-    padding-right: 70px;
     margin-bottom: 20px;
+
+    @include xl-min {
+      font-size: 25px;
+    }
+    @include xl {
+      font-size: 1.25rem;
+    }
+    @include lg-min {
+      padding-right: 70px;
+    }
   }
   &__actions {
     grid-area: act;
     display: flex;
     gap: $gap-sm;
+    @include lg {
+      justify-content: center;
+    }
   }
   &__notes {
     grid-area: nts;
@@ -47,7 +57,12 @@
     grid-area: pct;
   }
   &__image {
-    width: 100%;
-    transform: translateX(-20px);
+    @include lg-min {
+      width: 100%;
+      transform: translateX(-20px);
+    }
+    @include lg {
+      width: 50%;
+   }
   }
 }
