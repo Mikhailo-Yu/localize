@@ -1,0 +1,25 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.brands {
+  color: $color-black;
+  background-color: $color-bg-accent;
+  padding: 105px 0;
+  margin-bottom: 90px;
+
+    &__title {
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 1.2;
+        text-align: center;
+        margin: 0 auto 70px;
+        max-width: $container-small;
+        }
+
+    &__list {
+      display: flex;
+      gap: $gap;
+      align-items: center;
+      justify-content: space-between;
+    }
+}
