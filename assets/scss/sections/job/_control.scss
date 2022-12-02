@@ -1,39 +1,7 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
+@use "mixins" as *;
 
 .control {
-  display: flex;
-  gap: 138px;
-  margin-bottom: 250px;
-
-  &__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-basis: 0;
-    flex-grow: 1;
-    gap: $gap-sm;
-  }
-  &__title {
-    font-weight: 600;
-    font-size: 50px;
-    line-height: 1.2;
-    margin: 0;
-  }
-  &__discription {
-    font-size: 20px;
-    line-height: 1.5;
-  }
-  &__button {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.5;
-  }
-  &__picture{
-    flex-basis: 632px;
-
-  }
-  &__image{
-    width: 100%;
-  }
+ @include job-item (row)
 }
