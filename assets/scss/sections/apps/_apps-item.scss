@@ -1,0 +1,23 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.apps-item {
+  display: flex;
+  flex-direction: column;
+  &__title {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 1.4;
+    text-align: center;
+  }
+  &__discription {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+  }
+  &__picture {
+    text-align: center;
+    order: -1;
+  }
+
+}
