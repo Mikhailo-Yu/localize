@@ -2,21 +2,26 @@
 @use "../../mixins" as *;
 
 .quote {
+  background-color: $color-bg-sky;
 
   &__content {
+    display: flex;
+    padding-top: 53px;
+    gap: 95px;
+    align-items: center;
+    padding-bottom: 105px;
 
-  }
-  &__primary {
-
-  }
-  &__description {
-
-  }
-  &__logo {
-
+    @include xl {
+      gap: 50px;
+    }
+    @include lg {
+      gap: 20px;
+    }
+    @include sm {
+      flex-direction: column;
+    }
   }
   &__portret {
-    
-  }
 
+  }
 }

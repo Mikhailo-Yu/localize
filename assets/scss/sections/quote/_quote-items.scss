@@ -1,0 +1,23 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.quote-items {
+
+  &__primary {
+  margin: 0;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  padding-bottom: 25px;
+   @include md {
+    font-size: 20px;
+  line-height: 30px;
+    }
+}
+&__description {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  margin: 0;
+ }
+}

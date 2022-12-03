@@ -1,0 +1,64 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.raiting  {
+  background-color: $color-bg-brown;
+  padding-bottom: 90px;
+
+  &__content {
+    display: flex;
+    padding-top: 90px;
+    gap: 70px;
+    align-items: center;
+    @include xl {
+      gap: 50px;
+    }
+    @include lg {
+      gap: 10px;
+      justify-content: space-around;
+    }
+    @include md {
+      flex-wrap: wrap;
+    }
+  }
+  &__title {
+    font-weight: 600;
+    margin: 0;
+    font-size: 35px;
+    line-height: 50px;
+    border-right: solid 1px;
+    height: 168px;
+    display: flex;
+    align-items: center;
+    @include lg {
+      font-size: 28px;
+      line-height: 40px;
+      border: none;
+      width: 370px;
+    }
+    @include md {
+      order: 2;
+    }
+    @include xs {
+      font-size: 24px;
+      line-height: 25px;
+   }
+  }
+  &__picture {
+    order: -1;
+    @include lg {
+     display: none;
+    }
+  }
+  &__image {
+  }
+  &_users {
+  }
+  &__users-image {
+  }
+  &__captera {
+  }
+  &__captera-image {
+  }
+
+}
