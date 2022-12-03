@@ -4,11 +4,14 @@
 .apps-item {
   display: flex;
   flex-direction: column;
+  gap: 17px;
+
   &__title {
     font-weight: 600;
     font-size: 25px;
     line-height: 1.4;
     text-align: center;
+    margin: 0 0 12px;
   }
   &__discription {
     font-size: 18px;

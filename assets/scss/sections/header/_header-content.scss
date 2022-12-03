@@ -17,14 +17,12 @@
     grid-template-columns: 1fr 1fr;
   }
   @include  lg {
-    grid-template-areas: "ttl pct" "dsc pct" "act pct" "nts pct";
-    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "ttl" "dsc" "pct" "act" "nts";
     text-align: center;
   }
   &__title {
     grid-area: ttl;
     margin: 0 0 25px;
-
   }
   &__discription {
     grid-area: dsc;
