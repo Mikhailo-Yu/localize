@@ -1,0 +1,77 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.studies {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  @include md-ux {
+    gap: 5px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    order: -2;
+    margin: 0;
+    @include lg-md {
+      font-size: 35px;
+      line-height: 40px;
+      text-align: center;
+    }
+    @include md-ux {
+      font-size: 25px;
+      line-height: 30px;
+      text-align: center;
+    }
+
+  }
+  &__logo {
+  }
+  &__logo-image {
+    max-height: 32px;
+    width: 80px;
+  }
+  &__description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 300px;
+    margin: 0;
+    @include lg-md {
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+    }
+    @include md-ux {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  &__button {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 95px;
+    @include lg-md {
+      margin-bottom: 20px;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+    }
+    @include md-ux {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  &__picture {
+    order: -1;
+  }
+  &__image {
+    @include md {
+      width: 80%;
+    }
+  }
+}

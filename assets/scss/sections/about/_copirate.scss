@@ -1,0 +1,47 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+
+.copirate {
+  display: flex;
+  justify-content: space-between;
+  @include xs-ux {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__logo {
+    display: flex;
+    gap: $gap-sm;
+    @include sm-ux {
+      align-items: flex-start
+    }
+  }
+  &__logo-image {
+    @include sm {
+      max-width: 60%;
+    }
+  }
+  &__logo-description {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    max-width: 300px;
+    margin: 0;
+  }
+  &__right {
+  }
+  &__right-years {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0;
+  }
+  &__right-descripyion {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0;
+  }
+}
