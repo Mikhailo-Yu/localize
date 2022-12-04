@@ -1,5 +1,5 @@
-
-
+@use "../presets/variables" as *;
+@use "mixins-media" as * ;
 
 @mixin unlist ($m:0, $p:0) {
   margin: $m;
@@ -27,4 +27,37 @@
   right: $right;
   bottom: $bottom;
   left: $left;
+}
+@mixin title {
+  font-weight: 600;
+    font-size: 65px;
+    line-height: 75px;
+    margin: 0;
+    max-width: 740px;
+    text-align: center;
+    @include lg {
+      font-size: 30px;
+      line-height: 40px;
+      max-width: 540px;
+    }
+     @include md {
+      font-size: 25px;
+      line-height: 35px;
+      max-width: 420px;
+    }
+     @include sm {
+      font-size: 22px;
+      line-height: 30px;
+      max-width: 380px;
+    }
+    @include xs {
+      font-size: 20px;
+      line-height: 25px;
+      max-width: 300px;
+    }
+    @include xx {
+      font-size: 16px;
+      line-height: 20px;
+      max-width: 300px;
+    }
 }

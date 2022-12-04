@@ -4,6 +4,13 @@
 .raiting  {
   background-color: $color-bg-brown;
   padding-bottom: 90px;
+  margin-bottom: 160px;
+  @include xl-md {
+    margin-bottom: 80px;
+  }
+  @include md-ux {
+    margin-bottom: 20px;
+  }
 
   &__content {
     display: flex;
@@ -50,15 +57,4 @@
      display: none;
     }
   }
-  &__image {
-  }
-  &_users {
-  }
-  &__users-image {
-  }
-  &__captera {
-  }
-  &__captera-image {
-  }
-
 }
