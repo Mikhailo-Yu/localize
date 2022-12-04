@@ -5,8 +5,9 @@
   display: grid;
   flex-grow: 1;
   align-content: center;
-  padding: ($gap-xl * 2) 0;
+  padding-top: 128px;
   row-gap: $gap;
+  padding-bottom: 173px;
 
   @include  xl-min {
     grid-template-areas: "ttl pct" "dsc pct" "act pct" "nts pct";
@@ -27,7 +28,7 @@
   &__discription {
     grid-area: dsc;
     line-height: 1.4;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
     @include xl-min {
       font-size: 25px;

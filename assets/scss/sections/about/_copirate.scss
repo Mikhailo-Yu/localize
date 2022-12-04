@@ -5,6 +5,8 @@
 .copirate {
   display: flex;
   justify-content: space-between;
+  margin-top: 45px;
+
   @include xs-ux {
     flex-direction: column;
     align-items: center;

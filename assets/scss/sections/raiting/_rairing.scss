@@ -3,8 +3,9 @@
 
 .raiting  {
   background-color: $color-bg-brown;
-  padding-bottom: 90px;
-  margin-bottom: 160px;
+  padding-bottom: 75px;
+  margin-bottom: 170px;
+
   @include xl-md {
     margin-bottom: 80px;
   }
@@ -36,6 +37,7 @@
     border-right: solid 1px;
     height: 168px;
     display: flex;
+    margin-right: 2px;
     align-items: center;
     @include lg {
       font-size: 28px;
@@ -50,6 +52,9 @@
       font-size: 24px;
       line-height: 25px;
    }
+  }
+   &__captera {
+    margin-right: 37px;
   }
   &__picture {
     order: -1;

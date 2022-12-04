@@ -5,6 +5,14 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    width: 96vw;
+    background-color: $color-black;
+  }
   @include md-ux {
     gap: 5px;
   }
@@ -14,7 +22,7 @@
     font-size: 40px;
     line-height: 50px;
     order: -2;
-    margin: 0;
+    margin: 0 0 10px 0 ;
     @include lg-md {
       font-size: 35px;
       line-height: 40px;
@@ -28,6 +36,7 @@
 
   }
   &__logo {
+
   }
   &__logo-image {
     max-height: 32px;
@@ -68,8 +77,10 @@
   }
   &__picture {
     order: -1;
+    margin-bottom: 12px;
   }
   &__image {
+
     @include md {
       width: 80%;
     }

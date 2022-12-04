@@ -4,8 +4,9 @@
 .about {
  background-color: $color-bg-footer;
  margin-top: -19px;
- padding-top: 90px;
+ padding-top: 100px;
  padding-bottom: 40px;
+
  @include md-ux {
   flex-direction: column;
   gap: 0;
@@ -14,6 +15,7 @@
   &__content {
     display: flex;
     gap: 140px;
+    position: relative;
     @include md {
       flex-direction: column;
       gap: 0;
