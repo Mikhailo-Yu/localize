@@ -6,7 +6,7 @@
  margin-top: -19px;
  padding-top: 100px;
  padding-bottom: 40px;
-
+ position: relative;
  @include md-ux {
   flex-direction: column;
   gap: 0;
@@ -15,11 +15,12 @@
   &__content {
     display: flex;
     gap: 140px;
-    position: relative;
-    @include md {
+    
+      @include md {
       flex-direction: column;
       gap: 0;
       align-items: center
+
     }
   }
 
